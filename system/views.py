@@ -20,7 +20,7 @@ import simplejson
 from datetime import date, datetime
 
 
-# 重写登录验证方法，支持账户名和邮箱登陆，可扩展其他登录
+# 重写登录验证方法，支持账户名和邮箱登陆，可扩展其他登录。
 class CustomBackend(ModelBackend):
     def authenticate(self, request, username=None, password=None):
         try:
