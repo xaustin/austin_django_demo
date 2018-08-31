@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/assets/common/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/assets/custom/declare/css/declare.css">
+    <script src="/static/assets/common/js/jquery.js" ></script>
+    <script src="/static/assets/common/js/bootstrap.js" ></script>
+</head>
+
+<div class="declare-header">
+    <p class="username">
+        <span style="float: left; margin-left: 200px;"><a href="{% url 'book_index' %}">书籍管理</a></span>
+        <img style="margin-right: 8px; margin-top: -4px;" src="/static/assets/custom/declare/images/dengluyonghu.png" class="img1">
+        用户名：{{ request.user.username }}
+        <span class="interval"> | </span>
+        <a href="{% url 'system_logout' %}">
+            <img src="/static/assets/custom/declare/images/zhuxiao.png" class="img1">注销
+         </a>
+    </p>
+</div>

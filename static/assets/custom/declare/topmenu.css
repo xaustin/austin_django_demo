@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.topmenu {
+    height: 40px;
+    display:block;
+    padding:0px;
+    width:900px;
+    margin:0px auto 0 auto;
+}
+
+.topmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topmenu ul li {
+	float:left;
+	overflow:hidden;
+	position:relative;
+	line-height:40px;
+}
+
+.topmenu ul li a span {
+    position:absolute;
+    left:0;
+    width:120px;
+}
+.topmenu ul li a{
+    position:relative;
+    display:block;
+    width:120px;
+    height:40px;
+    font-family:"微软雅黑", "宋体";
+    font-size:14px;
+    text-decoration:none;
+    cursor:pointer;
+    font-weight:bold;
+    line-height:40px;
+}
+.topmenu ul li a span.out{top:0px;}
+.topmenu ul li a span.over,  .menu ul li a span.bg{top:-52px;}
+
+
+#topmenusfn{background-repeat:repeat;}
+#topmenusfn ul li a{color:#FFFFFF;}
+#topmenusfn ul li a span.over{color:#FFF;height:52px;width:120px;background-image:url(../images/topmenu/topmenu_view.png);background-repeat:repeat;}
+
+.topmenuactive{color:#FFF;height:40px;width:120px; background-color:#2b90d9;}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>首次登录</title>
+<link rel="stylesheet" href="/static/assets/common/css/bootstrap.css">
+<link rel="stylesheet" href="/static/assets/common/css/login.css">
+<script src="/static/assets/common/js/jquery.js" ></script>
+<script src="/static/assets/common/js/bootstrap.js" ></script>
+<body class="declare">
+<div class="login-name">
+    <h2>Austin Demo</h2>
+</div>
+<div class="declare_login">
+    <div class="login-main first_login" style="">
+        {% if message == 3 %}  <!-- 注册成功 -->
+        <p class="first_login_head">
+            <img class="img30" src="/static/assets/custom/declare/images/chenggongdg.png" alt="">恭喜注册成功
+        </p>
+        {% elif message == 2 %}  <!-- 用户不存在，注册失败 -->
+        <p class="first_login_head">
+            <img src="/static/assets/custom/declare/images/close.png" alt="">用户不存在，注册失败
+        </p>
+        {% else %}    <!-- 超过链接有效时间，注册失败 -->
+        <p class="first_login_head">
+            <img src="/static/assets/custom/declare/images/close.png" alt="">超过链接有效时间，注册失败
+        </p>
+        {% endif %}
+
+        <p><span class="time">5</span>秒后自动跳转......</p>
+    </div>
+</div>
+<script>
+    $(function () {
+        var timer = 5;
+        var t = setInterval(function () {
+            $(".time").text(timer);
+            timer--;
+            if(timer<0){
+                clearInterval(t);
+            }
+        },1000);
+        setTimeout(function () {
+            window.location.href= "http://localhost:8000";
+        },5000)
+
+    })
+
+</script>
+</body>
+</html>

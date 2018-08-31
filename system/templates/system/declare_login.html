@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet" href="/static/assets/common/css/bootstrap.css">
+<link rel="stylesheet" href="/static/assets/common/css/login.css">
+<script src="/static/assets/common/js/jquery.js" ></script>
+<script src="/static/assets/common/js/bootstrap.js" ></script>
+<body class="declare">
+    <div class="login-name">
+        <h2>Austin Demo</h2>
+    </div>
+    <div class="declare_login">
+        <div class="login-main">
+            <ul class="login-box">
+                <li><p class="login-box-head">账户登录</p></li>
+                {% if errmsg %}
+                    <div class="note note-error">
+                        <span style="text-align: center;color: red;">{{ errmsg }}</span>
+                    </div>
+                {% endif %}
+                <form method="POST" action="{% url 'system_login' %}" id="login_ok">
+                    <li>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <img style="width: 20px" src="/static/assets/custom/declare/images/zhanghao.png" alt="">
+                                </div>
+                                <input type="text" class="form-control" name="username" placeholder="请输入用户名/邮箱">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <img style="width: 20px" src="/static/assets/custom/declare/images/mima.png" alt="">
+                                </div>
+                                <input type="password" class="form-control" name="password" placeholder="请输入密码">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input class="verification-put" name="verification" type="text" placeholder="请输入验证码">
+                            <div class="verification-code" id="login-code"></div>
+                            <span class="other-code">换一张</span>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <button class="btn btn-info btn-block" type="submit">登录</button>
+                        </div>
+                    </li>
+                </form>
+                <li>
+                    <a class="text-muted text-left col-lg-6 forget" href="#">忘记密码</a>
+                    <a class="text-muted text-right col-lg-6 register" href="#">立即注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="register-main" style="top: 50px;">
+            <ul class="login-box">
+                <li><p class="login-box-head">注册用户</p></li>
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" name="email" placeholder="请输入用户邮箱">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" name="reusername" placeholder="请输入账号名称">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" name="password1" type="password" placeholder="请输入用户密码">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" name="password2" type="password" placeholder="确认密码">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" name="phone_number"  placeholder="请输入手机号码">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <input class="form-control" name="qq_number"  placeholder="请输入qq号码">
+                    </div>
+                </li>
+            </ul>
+                <div>
+                    <button class="btn btn-info back-login" type="button">返回登录</button>
+                    <button class="btn btn-info" type="button" id="create-ok">完成</button>
+
+                </div>
+        </div>
+        <div class="forget-main">
+            <ul class="login-box">
+                <li><p class="login-box-head">找回密码</p></li>
+                <form action="#" id="confirm">
+                    <li>
+                        <div class="form-group">
+                            <input class="form-control" name="usermail" placeholder="请输入用户邮箱">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input class="verification-put"  name="verification" type="text" placeholder="请输入验证码">
+                            <div class="verification-code" id="login-code1"></div>
+                            <span class="other-code">换一张</span>
+                        </div>
+                    </li>
+
+                </form>
+            </ul>
+            <div>
+                <button class="btn btn-info back-login" type="button">返回登录</button>
+                <button class="btn btn-info" type="submit">确定找回</button>
+                <button class="btn btn-info" type="reset">重新填写</button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/assets/common/js/login.js" ></script>
+    <script>
+        $(function () {
+            $.ajaxSetup({
+                data: {csrfmiddlewaretoken: '{{ csrf_token }}'}
+              });
+            $("#create-ok").click(function () {
+                var data = {};
+                var url = '{% url 'register' %}';
+                data['email']=$("input[name='email']").val();
+                data['username']=$("input[name='reusername']").val();
+                data['password']=$("input[name='password1']").val();
+                data['password2']=$("input[name='password2']").val();
+                data['phone_number']=$("input[name='phone_number']").val();
+                data['qq_number']=$("input[name='qq_number']").val();
+
+                if(data['username'] == ''){
+                   alertPrompt("用户名不能为空！");
+                   return false;
+                }
+                if(data['password'] == '' || data['password2'] == '' ){
+                   alertPrompt("密码不能为空！");
+                   return false;
+                } else if (data['password'] != data['password2']){
+                    alertPrompt("两次密码不同，请重新输入！");
+                   return false;
+                }
+
+                $.ajax({
+                   type: "POST",
+                    url: url,
+                    data: data,
+                    success: function(data){//msg为返回的数据，在这里做数据绑定}
+                        alertPrompt(data.result)
+                        $(".register-main").hide();
+                        $(".forget-main").hide();
+                        $(".login-main").show();
+                        createCode(".verification-code");
+                    },
+                    error:function () {
+                        alertPrompt("申请失败，请重新申请！")
+                    }
+                });
+            });
+            $("#confirm").click(function () {
+                var data = {};
+                var url = '{% url 'send_email' %}';
+                data['emailaddress']=$("input[name='usermail']").val();
+
+                $.ajax({
+                   type: "POST",
+                    url: url,
+                    data: data,
+                    success: function(data){//msg为返回的数据，在这里做数据绑定}
+                        alertPrompt(data.result)
+                    },
+                    error:function () {
+                        alertPrompt("修改密码失败，请重新修改！")
+                    }
+                });
+            });
+            // 注释验证码
+            //$("#login_ok").submit(function () {
+              //  var code = ($("input[name='verification']").eq(0).val()).toLocaleLowerCase();
+              //  if(code!=($("#login-code").text()).toLocaleLowerCase()){
+              //      alertPrompt("验证码错误！")
+              //      return false;
+              //  }
+           // })
+            //$("#confirm").submit(function () {
+               // var code = ($("input[name='verification']").eq(1).val()).toLocaleLowerCase();
+                //if(code!=($("#login-code1").text()).toLocaleLowerCase()){
+                //    alertPrompt("验证码错误！")
+                //    return false;
+                //}
+            //})
+        })
+    </script>
+</body>
+</html>

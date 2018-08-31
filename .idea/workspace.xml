@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98f453b3-34b7-47db-aa8c-545ead324333" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api_test/add_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/management.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/migrations/0002_author_school.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/send_mail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/migrations/0002_auto_20180816_1621.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/serializer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drf/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books/migrations/0002_auto_20180720_1116.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/austin_demo/__init__.py" afterPath="$PROJECT_DIR$/austin_demo/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/austin_demo/settings.py" afterPath="$PROJECT_DIR$/austin_demo/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/austin_demo/urls.py" afterPath="$PROJECT_DIR$/austin_demo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/books/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/models.py" afterPath="$PROJECT_DIR$/books/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/views.py" afterPath="$PROJECT_DIR$/books/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/models.py" afterPath="$PROJECT_DIR$/system/models.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Compare Directories">
+    <option name="identicalVisible" value="true" />
+    <option name="differentVisible" value="true" />
+    <option name="differentInBlanksVisible" value="true" />
+    <option name="differentNonSignificantVisible" value="true" />
+    <option name="leftOnlyVisible" value="true" />
+    <option name="rightOnlyVisible" value="true" />
+    <option name="mostProbablyIdenticalVisible" value="true" />
+    <option name="probablyIdenticalLeftNewerVisible" value="true" />
+    <option name="probablyIdenticalRightNewerVisible" value="true" />
+    <option name="probablyDifferentLeftNewerVisible" value="true" />
+    <option name="probablyDifferentRightNewerVisible" value="true" />
+    <option name="javaStructureVisible" value="false" />
+    <option name="autoExcludeHidden" value="false" />
+    <option name="autoScrollFromSource" value="false" />
+    <option name="lastLeftPaths">
+      <value len="0" />
+    </option>
+    <option name="lastRightPaths">
+      <value len="0" />
+    </option>
+    <option name="ignoredFileMasks">
+      <value len="0" />
+    </option>
+    <option name="exportFileName" value="CompareDirectories.txt" />
+    <option name="allowedDiffMasks">
+      <value len="0" />
+    </option>
+    <option name="diffsInCommentsNonSignificant" value="false" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/austin_demo$add_test.coverage" NAME="add_test Coverage Results" MODIFIED="1533294619875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api_test" />
+    <SUITE FILE_PATH="coverage/austin_demo$send_mail.coverage" NAME="send_mail Coverage Results" MODIFIED="1535358197401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/books" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="389" column="33" lean-forward="false" selection-start-line="389" selection-start-column="33" selection-end-line="389" selection-end-column="33" />
+              <folding>
+                <element signature="e#24#59#0" expanded="true" />
+                <element signature="e#830#1115#0" expanded="false" />
+                <element signature="e#1277#2417#0" expanded="false" />
+                <element signature="e#2483#2550#0" expanded="false" />
+                <element signature="e#2608#2669#0" expanded="false" />
+                <element signature="e#2696#2806#0" expanded="false" />
+                <element signature="e#2856#4444#0" expanded="false" />
+                <element signature="e#4508#5146#0" expanded="false" />
+                <element signature="e#5200#6314#0" expanded="false" />
+                <element signature="e#6376#6988#0" expanded="false" />
+                <element signature="e#7048#7858#0" expanded="false" />
+                <element signature="e#7928#8503#0" expanded="false" />
+                <element signature="e#8573#9151#0" expanded="false" />
+                <element signature="e#9186#9410#0" expanded="false" />
+                <element signature="e#9476#10207#0" expanded="false" />
+                <element signature="e#10274#11026#0" expanded="false" />
+                <element signature="e#11086#11483#0" expanded="false" />
+                <element signature="e#11545#12383#0" expanded="false" />
+                <element signature="e#12450#12899#0" expanded="false" />
+                <element signature="e#12970#13751#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1566">
+              <caret line="59" column="91" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="59" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>login-code1</find>
+      <find>telephonenumber</find>
+      <find>create-ok</find>
+      <find>declare-index</find>
+      <find>authenticate</find>
+      <find>login</find>
+      <find>Application</find>
+      <find>Application definition</find>
+      <find>AUTHENTICATION_BACKENDS</find>
+      <find>confirm</find>
+      <find>sendemail</find>
+      <find>topmenusfn</find>
+      <find>topmenurow</find>
+      <find>print</find>
+      <find>cr</find>
+      <find>SECRET_KEY</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/system/forms.py" />
+        <option value="$PROJECT_DIR$/static/assets/custom/declare/css/declare.css" />
+        <option value="$PROJECT_DIR$/system/authentication.py" />
+        <option value="$PROJECT_DIR$/system/templates/system/message.html" />
+        <option value="$PROJECT_DIR$/system/templates/system/declare_login.html" />
+        <option value="$PROJECT_DIR$/static/assets/custom/declare/topmenu.css" />
+        <option value="$PROJECT_DIR$/programing/urls.py" />
+        <option value="$PROJECT_DIR$/programing/models.py" />
+        <option value="$PROJECT_DIR$/books/templates/books/_sidebar.html" />
+        <option value="$PROJECT_DIR$/system/templates/system/declare_index.html" />
+        <option value="$PROJECT_DIR$/system/urls.py" />
+        <option value="$PROJECT_DIR$/templates/topmenu.html" />
+        <option value="$PROJECT_DIR$/static/assets/common/css/topmenu.css" />
+        <option value="$PROJECT_DIR$/books/templates/books/book_index.html" />
+        <option value="$PROJECT_DIR$/system/views.py" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/books/urls.py" />
+        <option value="$PROJECT_DIR$/middle/__init__.py" />
+        <option value="$PROJECT_DIR$/middle/middle_one.py" />
+        <option value="$PROJECT_DIR$/product/models.py" />
+        <option value="$PROJECT_DIR$/product/urls.py" />
+        <option value="$PROJECT_DIR$/product/views.py" />
+        <option value="$PROJECT_DIR$/austin_demo/urls.py" />
+        <option value="$PROJECT_DIR$/api_test/add_test.py" />
+        <option value="$PROJECT_DIR$/drf/views.py" />
+        <option value="$PROJECT_DIR$/drf/serializer.py" />
+        <option value="$PROJECT_DIR$/books/sql.py" />
+        <option value="$PROJECT_DIR$/books/sql/author.py" />
+        <option value="$PROJECT_DIR$/books/sql/author.sql" />
+        <option value="$PROJECT_DIR$/management.py" />
+        <option value="$PROJECT_DIR$/books/management.py" />
+        <option value="$PROJECT_DIR$/austin_demo/__init__.py" />
+        <option value="$PROJECT_DIR$/drf/urls.py" />
+        <option value="$PROJECT_DIR$/drf/models.py" />
+        <option value="$PROJECT_DIR$/system/models.py" />
+        <option value="$PROJECT_DIR$/drf/tests.py" />
+        <option value="$PROJECT_DIR$/austin_demo/settings.py" />
+        <option value="$PROJECT_DIR$/books/models.py" />
+        <option value="$PROJECT_DIR$/books/views.py" />
+        <option value="$PROJECT_DIR$/books/send_mail.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-136" />
+    <option name="y" value="69" />
+    <option name="width" value="1386" />
+    <option name="height" value="453" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Python</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="austin_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="austin_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="austin_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="austin_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="nodejs_interpreter_path" value="F:/nodejs/node" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project-self\project-django\austin_demo\static\assets\common\css" />
+      <recent name="D:\project-self\project-django\austin_demo\templates" />
+      <recent name="D:\project-self\project-django\austin_demo\books\templates\books" />
+      <recent name="D:\project-self\project-django\austin_demo\static\assets\custom\declare" />
+      <recent name="D:\project-self\project-django\austin_demo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.send_mail">
+    <configuration name="add_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="austin_demo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/add_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="austin_demo" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="austin_demo.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python2.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="austin_demo" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="9000" />
+      <option name="host" value="austin.com" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration name="send_mail" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/books" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="austin_demo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/books/send_mail.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Django server.austin_demo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.add_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.send_mail" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.send_mail" />
+        <item index="1" class="java.lang.String" itemvalue="Python.add_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98f453b3-34b7-47db-aa8c-545ead324333" name="Default" comment="" />
+      <created>1531366448389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531366448389</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add code">
+      <created>1531448939616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531448939616</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add code">
+      <created>1531450459476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531450459476</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add code">
+      <created>1531461532708</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531461532708</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add code">
+      <created>1531471784135</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531471784135</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add code">
+      <created>1531471795386</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531471795386</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add code">
+      <created>1531475566558</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531475566559</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add code">
+      <created>1531476969323</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531476969323</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add code">
+      <created>1531479461523</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531479461523</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add permission">
+      <created>1531720486048</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1531720486048</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add permission">
+      <created>1531720539978</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1531720539978</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add OneToOne  ForeignKey  ManyToMany">
+      <created>1532076089795</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1532076089795</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <created>1532077836228</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1532077836228</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test">
+      <created>1532077881315</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532077881315</updated>
+    </task>
+    <task id="LOCAL-00014" summary="test">
+      <created>1532570643915</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532570643915</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test">
+      <created>1532916297172</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1532916297172</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Serializable">
+      <created>1533264573749</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533264573749</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Serializable">
+      <created>1533264604024</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1533264604024</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Serializable">
+      <created>1533265564834</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1533265564834</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2423756" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52006423" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39004815" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46869984" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15128593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Compare Directories" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5232745" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@austin_demo" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1187801" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add code" />
+    <MESSAGE value="add permission" />
+    <MESSAGE value="add OneToOne  ForeignKey  ManyToMany" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Serializable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Serializable" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="13" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="435" column="6" lean-forward="false" selection-start-line="435" selection-start-column="6" selection-end-line="435" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/custom/declare/topmenu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programing/urls.py" />
+    <entry file="file://$PROJECT_DIR$/programing/models.py" />
+    <entry file="file://$PROJECT_DIR$/books/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/templates/books/_sidebar.html" />
+    <entry file="file://$PROJECT_DIR$/system/templates/system/declare_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/templates/system/declare_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="189" column="5" lean-forward="false" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/topmenu.html" />
+    <entry file="file://$PROJECT_DIR$/static/assets/common/css/topmenu.css" />
+    <entry file="file://$PROJECT_DIR$/books/templates/books/book_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/custom/declare/css/declare.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middle/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/sessions/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/middleware/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/middleware/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="75" column="6" lean-forward="false" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middle/middle_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/templates/system/message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/authentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/tokenvalidate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/2144424164/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="4491" column="6" lean-forward="false" selection-start-line="4491" selection-start-column="6" selection-end-line="4491" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7695">
+          <caret line="325" column="37" lean-forward="true" selection-start-line="325" selection-start-column="37" selection-end-line="325" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/sql.py" />
+    <entry file="file://$PROJECT_DIR$/books/sql/author.sql" />
+    <entry file="file://$PROJECT_DIR$/management.py" />
+    <entry file="file://$PROJECT_DIR$/austin_demo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/management.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drf/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drf/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_test/add_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drf/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drf/serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/austin_demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="138" column="17" lean-forward="false" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="17" />
+          <folding>
+            <element signature="e#2469#2975#0" expanded="false" />
+            <marker date="1534921870253" expanded="true" signature="1416:1685" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="86" lean-forward="false" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/austin_demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/send_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/2144424164/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="59" column="91" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="59" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="389" column="33" lean-forward="false" selection-start-line="389" selection-start-column="33" selection-end-line="389" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+            <element signature="e#830#1115#0" expanded="false" />
+            <element signature="e#1277#2417#0" expanded="false" />
+            <element signature="e#2483#2550#0" expanded="false" />
+            <element signature="e#2608#2669#0" expanded="false" />
+            <element signature="e#2696#2806#0" expanded="false" />
+            <element signature="e#2856#4444#0" expanded="false" />
+            <element signature="e#4508#5146#0" expanded="false" />
+            <element signature="e#5200#6314#0" expanded="false" />
+            <element signature="e#6376#6988#0" expanded="false" />
+            <element signature="e#7048#7858#0" expanded="false" />
+            <element signature="e#7928#8503#0" expanded="false" />
+            <element signature="e#8573#9151#0" expanded="false" />
+            <element signature="e#9186#9410#0" expanded="false" />
+            <element signature="e#9476#10207#0" expanded="false" />
+            <element signature="e#10274#11026#0" expanded="false" />
+            <element signature="e#11086#11483#0" expanded="false" />
+            <element signature="e#11545#12383#0" expanded="false" />
+            <element signature="e#12450#12899#0" expanded="false" />
+            <element signature="e#12970#13751#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

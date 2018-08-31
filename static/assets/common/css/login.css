@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+.declare_login{
+    background-image: url("../../custom/declare/images/login.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    min-width: 1170px;
+    height: 567px;
+    position: relative;
+}
+.login-main,
+.register-main,
+.forget-main,
+.unit-login{
+    width: 380px;
+    padding: 20px;
+    position: absolute;
+    top: 105px;
+    left: 585px;
+    background-color: white;
+    text-align: center;
+}
+.login-box{
+    width: 80%;
+    margin: 0 10%;
+}
+.login-box-head{
+    color: #00a0e9;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.verification-put{
+    margin-right: 25px;
+    width: 145px;
+    height: 34px;
+    border:1px solid #ccc;
+    border-radius: 5px
+}
+.verification-code{
+    display: inline-block;
+    color: white;
+    background: #00a0e9;
+    padding: 5px 0px;
+    width: 52px;
+}
+.register-main,
+.forget-main,
+.unit-login{
+    display: none;
+    left: 50%;
+    margin-left: -190px;
+}
+.declare_login .form-group .list-group li{
+    padding: 6px 12px;
+}
+.first_login{
+    height: 215px;border-radius: 5px;
+}
+.img30{
+    width: 30px;
+}
+.first_login_head{
+    font-size: 20px;
+    margin-top: 60px
+}
+/**********************弹出提示框**********************/
+.tip{width:320px; height:200px; position:absolute;top:50%; left:50%;margin-top: -100px;margin-left: -160px;background:#fcfdfd;box-shadow:1px 8px 10px 1px #9b9b9b;display:none; z-index:111111;}
+.tiptop{height:40px; line-height:40px; cursor:pointer;background-color: #00a0e9;}
+.tiptop span{font-size:14px; font-weight:bold; color:#fff;float:left; text-indent:20px;}
+.tiptop a{background-color: #c0c0c0;display:block; width:22px; height:22px;float:right;margin-right:7px; margin-top:10px; cursor:pointer;line-height: 22px;text-align: center;color: white;border-radius: 50%;}
+.tiptop a:hover{}
+.tipinfo{padding-top:30px;text-align: center; height:95px;}
+.tipinfo span{width:95px; height:95px;float:left;}
+.tipright{padding-top:15px; padding-left:10px;}
+.tipright p{font-size:14px; font-weight:bold; line-height:35px;}
+.tipright cite{color:#858686;}
+.tipbtn{margin-top:10px; text-align: center}
+.sure ,.cancel{background-color: #00a0e9;width:96px; height:35px; line-height:35px; color:#fff; font-size:14px; font-weight:bold;border-radius: 3px; cursor:pointer;border: none}
+.cancel{color:#000;font-weight:normal;}
+.tempprompt{
+    min-width:700px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: auto;
+    margin-left: -350px;
+    background:#fcfdfd;box-shadow:1px 8px 10px 1px #9b9b9b;
+    z-index:111111;
+}
+.tempprompt .prompt-header{
+    padding: 9px 15px;border-bottom: 1px solid #eee;background-color: #1bbc9b;
+}
+.tempprompt .prompt-header span{
+    line-height: 27px;font-size: 18px;margin: 0;font-weight: bold;color: white;text-rendering: optimizelegibility;
+}
+.tempprompt .prompt-body{
+    margin: 10px 20px;
+}
+.tempprompt .prompt-body li{
+    margin-bottom: 10px;font-size: 15px;
+}
+.tempprompt .prompt-footer{
+    text-align: right;margin: 10px 20px
+}
+.alert-modal-bgcolor{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: transparent;
+}
